@@ -1,0 +1,14 @@
+{
+	"dependencies": {
+		"@unicode/unicode-17.0.0": "^1.6.16",
+		"jsdom": "^29.1.1",
+		"lottie-to-svg": "^1.1.0",
+		"pixelmatch": "^7.2.0",
+		"pngjs": "^7.0.0",
+		"sharp": "^0.34.5",
+		"svgo": "^4.0.1"
+	},
+	"scripts": {
+		"build": "node toSVG.mjs && sh aliases.sh && nanoemoji --color_format untouchedsvg usvg/*.svg --family 'Telegram Color Emoji'"
+	}
+}
