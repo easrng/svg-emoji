@@ -3,7 +3,7 @@ const path = require('path');
 const { pipeline } = require('stream/promises');
 
 // --- CONFIGURATION ---
-const BOT_TOKEN = '8361049528:AAEpZ0ppGNaAu8H_fPDnoOU5c-jxxsZBl50'; // Replace with your actual bot token
+const BOT_TOKEN = process.env.BOT_TOKEN;
 // AnimatedEmojies, FlagsEmoji
 const STICKER_SET_NAME = 'AnimatedEmojies'; // The name of the pack
 const OUTPUT_DIR = path.join(__dirname, 'stickers');
