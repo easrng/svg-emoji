@@ -8,7 +8,3 @@ cd usvg
 [ -L emoji_u1f1f2_1f1eb.svg ] || ln -s emoji_u1f1eb_1f1f7.svg emoji_u1f1f2_1f1eb.svg # MF -> FR
 [ -L emoji_u1f1f8_1f1ef.svg ] || ln -s emoji_u1f1f3_1f1f4.svg emoji_u1f1f8_1f1ef.svg # SJ -> NO
 [ -L emoji_u1f1fa_1f1f2.svg ] || ln -s emoji_u1f1fa_1f1f8.svg emoji_u1f1fa_1f1f2.svg # UM -> US
-
-# [ -e emoji_u1f1e6_1f1e8.svg ] || ~/.cargo/bin/usvg ../special/emoji_u1f1e6_1f1e8.svg emoji_u1f1e6_1f1e8.svg
-# [ -e emoji_u1f1f9_1f1e6.svg ] || ~/.cargo/bin/usvg ../special/emoji_u1f1f9_1f1e6.svg emoji_u1f1f9_1f1e6.svg
-# [ -e emoji_u1f1e8_1f1f6.svg ] || ~/.cargo/bin/usvg ../special/emoji_u1f1e8_1f1f6.svg emoji_u1f1e8_1f1f6.svg

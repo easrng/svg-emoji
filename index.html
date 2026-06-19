@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SVG Emoji</title>
+        <style>
+            :root {
+                color-scheme: dark light;
+                font-family: sans-serif;
+            }
+
+            #emojis_element > img {
+                width: 100%;
+                aspect-ratio: 1;
+            }
+            #emojis_element {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SVG Emojis</h1>
+        <div id="emojis_element"></div>
+        <script src="emojis.js"></script>
+        <script>
+            emojis_element.append(
+                ...emojis.map((e) =>
+                    Object.assign(new Image(), {
+                        src: "svg/" + e,
+                        decoding: "async",
+                    })
+                ),
+            );
+        </script>
+    </body>
+</html>
